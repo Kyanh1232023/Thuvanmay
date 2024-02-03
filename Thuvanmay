@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn 2 Bên</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            background-image: url('https://images.app.goo.gl/q89uqterrQNjWFgcA');
+            background-size: cover;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chọn Một Bên</h1>
+    
+    <button onclick="chonBen('ben1')">Bên 1</button>
+    <button onclick="chonBen('ben2')">Bên 2</button>
+
+    <p id="ketQua"></p>
+
+    <script>
+        function chonBen(ben) {
+            document.getElementById('ketQua').innerText = 'Bạn đã chọn ' + ben;
+        }
+    </script>
+
+</body>
+</html>
